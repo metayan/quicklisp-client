@@ -213,7 +213,7 @@ quicklisp at CL startup."
   (:implementation ccl
     (directory (merge-pathnames *wild-entry* directory)
                #+ccl :directories #+ccl t
-               #+ccl :follow-links #+ccl nil))
+               #+ccl :follow-links #+ccl t))
   (:implementation clasp
     (nconc
      (directory (merge-pathnames *wild-entry* directory)
